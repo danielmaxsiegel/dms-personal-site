@@ -1,0 +1,42 @@
+/*
+  Colors:
+  #fff - white
+  #808382 - light gray
+  #171a21 - dark gray
+  #32cccc - bright blue
+  #d7b6bf - pastel pink
+*/
+
+html, body {
+  background-color: #fff;
+  width:100%;
+  height:100%;
+}
+
+[class^="header-"] {
+  width:100%;
+}
+
+[class^="triangle-"] {
+  width: 500px;
+  height: 300px;
+  margin: 30px auto;
+  transition: all 2s ease;
+  position: absolute;
+}
+
+.triangle-1 {
+  background-color: #32cccc66;
+  shape-inside: polygon(0 0, 500px 0, 350px 300px, 150px 300px);
+  -webkit-clip-path: polygon(0 0,  500px 0, 350px 300px, 150px 300px);
+  z-index: 4;
+  margin-left: 15vw;
+}
+
+.triangle-2 {
+  background-color: #d7b6bf88;
+  shape-inside: polygon(150px 0,  350px 0, 500px 300px, 0 300px);
+  -webkit-clip-path: polygon(150px 0,  350px 0, 500px 300px, 0 300px);
+  z-index: 5;
+  margin-left: 20vw;
+}
