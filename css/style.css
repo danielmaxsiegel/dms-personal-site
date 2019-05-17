@@ -1,6 +1,6 @@
 /*
   Colors:
-  #fff - white
+  #ffffff - white
   #808382 - light gray
   #171a21 - dark gray
   #32cccc - bright blue
@@ -9,34 +9,87 @@
 
 html, body {
   background-color: #fff;
-  width:100%;
-  height:100%;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
+/**
+* General styles
+*/
+
+[class^="section-title-"] {
+  background-color: #808382;
+}
+
+/**
+* Header
+*/
+
+header {
+  height:45vh;
+  width:100%;
+  /* padding: 0 30px; */
+  display: block;
+}
+
+/*
 [class^="header-"] {
   width:100%;
+} */
+.header-wrapper {
+    min-width: 50%;
+    max-width: none;
+    min-height: 10%;
+    max-height: none;
 }
 
 [class^="triangle-"] {
-  width: 500px;
-  height: 300px;
-  margin: 30px auto;
-  transition: all 2s ease;
   position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  display: inline-block;
 }
 
 .triangle-1 {
-  background-color: #32cccc66;
-  shape-inside: polygon(0 0, 500px 0, 350px 300px, 150px 300px);
-  -webkit-clip-path: polygon(0 0,  500px 0, 350px 300px, 150px 300px);
-  z-index: 4;
-  margin-left: 15vw;
+    border-width: 500px 400px 0 0;
+    border-color: #32cccc88 transparent transparent transparent;
+    margin: 0 30vw;
+    animation: triangle-1-anim 10s ease infinite;
 }
 
 .triangle-2 {
-  background-color: #d7b6bf88;
-  shape-inside: polygon(150px 0,  350px 0, 500px 300px, 0 300px);
-  -webkit-clip-path: polygon(150px 0,  350px 0, 500px 300px, 0 300px);
-  z-index: 5;
-  margin-left: 20vw;
+  border-width: 230px 600px 0 0;
+  border-color: #d7b6bfDD transparent transparent transparent;
+  margin: 0 20vw;
+  animation: triangle-2-anim 9s ease infinite;
+}
+
+@keyframes triangle-1-anim {
+  0% { transform: rotate(30deg) translate(0,0); }
+  50% { transform: rotate(30deg) translate(10px,0px); }
+  100% { transform: rotate(30deg) translate(0,0); }
+}
+
+@keyframes triangle-2-anim {
+  0% { transform: rotate(240deg) translate(0,0); }
+  50% { transform: rotate(240deg) translate(-20px,0px); }
+  100% { transform: rotate(240deg) translate(0,0); }
+}
+
+/**
+* Main
+*/
+
+main {
+
+}
+
+/**
+* Footer
+*/
+
+footer {
+
 }
