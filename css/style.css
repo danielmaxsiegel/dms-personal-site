@@ -7,6 +7,11 @@
   #d7b6bf - pastel pink
 */
 
+
+/**
+* General styles
+*/
+
 html, body {
   background-color: #fff;
   margin: 0;
@@ -14,12 +19,12 @@ html, body {
   display: block;
 }
 
-/**
-* General styles
-*/
+::-moz-selection { /* Code for Firefox */
+  background: #32cccc88;
+}
 
-[class^="section-title-"] {
-  background-color: #808382;
+::selection {
+  background: #32cccc88;
 }
 
 /**
@@ -84,6 +89,11 @@ header {
 
 main {
 
+}
+
+[class^="sectiontitle-"] {
+  background-color: #32cccc;
+  color: #171a21;
 }
 
 /**
