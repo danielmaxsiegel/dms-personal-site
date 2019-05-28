@@ -19,6 +19,10 @@ html, body {
   display: block;
 }
 
+h1 {
+  color: #eaeaea;
+}
+
 ::-moz-selection { /* Code for Firefox */
   background: #32cccc88;
 }
@@ -36,6 +40,17 @@ header {
   width:100%;
   /* padding: 0 30px; */
   display: block;
+}
+
+.header-picture {
+}
+
+.profile-image {
+  width:100px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 /*
@@ -91,9 +106,21 @@ main {
 
 }
 
-[class^="sectiontitle-"] {
+[class^="section-title"] {
   background-color: #32cccc;
   color: #171a21;
+}
+
+.section-title-style-0 {
+  background-color: #d7b6bf;
+}
+
+.section-title-style-1 {
+  background-color: #32cccc;
+}
+
+.section-title-style-2 {
+  background-color: #eaeaea;
 }
 
 /**
@@ -102,4 +129,9 @@ main {
 
 footer {
 
+}
+
+.copyright {
+  font-size: 80%;
+  color: #808382;
 }
