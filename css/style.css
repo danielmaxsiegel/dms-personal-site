@@ -20,7 +20,7 @@ html, body {
 }
 
 h1 {
-  color: #eaeaea;
+  color: #171a21;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -43,6 +43,7 @@ header {
 }
 
 .header-picture {
+  padding: 20px;
 }
 
 .profile-image {
