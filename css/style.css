@@ -2,6 +2,10 @@
   background-color: #eee!important;
 }
 
+.bg-primary {
+  background-color: #33cccc!important;
+}
+
 .img-work-logo {
   max-height: 150px;
   max-width: 150px;
@@ -11,6 +15,14 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px!important;
+}
+
+.small-bottom-margin {
+  margin-bottom: 5px!important;
 }
 
 form #url{
