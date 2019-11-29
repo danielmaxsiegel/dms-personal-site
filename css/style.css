@@ -1,0 +1,22 @@
+.bg-grey {
+  background-color: #eee!important;
+}
+
+.img-work-logo {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.img-maind {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+form #url{
+  display:none;
+}
+
+form #website{
+  display:none;
+}
