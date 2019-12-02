@@ -2,8 +2,30 @@
   background-color: #eee!important;
 }
 
+.bg-light-grey {
+  background-color: #f5f5f5!important;
+}
+
 .bg-primary {
   background-color: #33cccc!important;
+}
+
+.copy-email-button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  cursor: pointer;
+
+  color: #1abc9c;
+  text-decoration: none;
+  background-color: transparent;
+
+  font-weight: 700!important;
+}
+
+.copy-email-button:hover {
+  color: #117964;
+  text-decoration: underline;
 }
 
 .img-work-logo {
