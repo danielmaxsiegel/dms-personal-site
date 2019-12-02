@@ -1,159 +1,56 @@
-/*
-  Colors:
-  #ffffff - white
-  #808382 - light gray
-  #171a21 - dark gray
-  #32cccc - bright blue
-  #d7b6bf - pastel pink
-*/
-
-
-/**
-* General styles
-*/
-
-html, body {
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  display: block;
+.bg-grey {
+  background-color: #eee!important;
 }
 
-h1 {
-  color: #171a21;
+.bg-light-grey {
+  background-color: #f5f5f5!important;
 }
 
-::-moz-selection { /* Code for Firefox */
-  background: #32cccc88;
+.bg-primary {
+  background-color: #33cccc!important;
 }
 
-::selection {
-  background: #32cccc88;
+.copy-email-button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  cursor: pointer;
+
+  color: #1abc9c;
+  text-decoration: none;
+  background-color: transparent;
+
+  font-weight: 700!important;
 }
 
-/**
-* Header
-*/
-
-header {
-  height:45vh;
-  width:100%;
-  /* padding: 0 30px; */
-  display: block;
+.copy-email-button:hover {
+  color: #117964;
+  text-decoration: underline;
 }
 
-.header-picture {
-  padding: 20px;
+.img-work-logo {
+  max-height: 150px;
+  max-width: 150px;
 }
 
-.profile-image {
-  width:100px;
-
+.img-maind {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
 
-/*
-[class^="header-"] {
-  width:100%;
-} */
-.header-wrapper {
-    min-width: 50%;
-    max-width: none;
-    min-height: 10%;
-    max-height: none;
+.no-bottom-margin {
+  margin-bottom: 0px!important;
 }
 
-[class^="triangle-"] {
-  position: absolute;
-  border-style: solid;
-  width: 0;
-  height: 0;
-  display: inline-block;
+.small-bottom-margin {
+  margin-bottom: 5px!important;
 }
 
-.triangle-1 {
-    border-width: 500px 400px 0 0;
-    border-color: #32cccc88 transparent transparent transparent;
-    margin: 0 30vw;
-    animation: triangle-1-anim 10s ease infinite;
+form #url{
+  display:none;
 }
 
-.triangle-2 {
-  border-width: 230px 600px 0 0;
-  border-color: #d7b6bfDD transparent transparent transparent;
-  margin: 0 20vw;
-  animation: triangle-2-anim 9s ease infinite;
-}
-
-@keyframes triangle-1-anim {
-  0% { transform: rotate(30deg) translate(0,0); }
-  50% { transform: rotate(30deg) translate(10px,0px); }
-  100% { transform: rotate(30deg) translate(0,0); }
-}
-
-@keyframes triangle-2-anim {
-  0% { transform: rotate(240deg) translate(0,0); }
-  50% { transform: rotate(240deg) translate(-20px,0px); }
-  100% { transform: rotate(240deg) translate(0,0); }
-}
-
-/**
-* Main
-*/
-
-main {
-
-}
-
-[class^="section-title"] {
-  padding: 1% 2%;
-  color: #fff;
-}
-
-/*
-  Bevel Circle - courtesy of https://www.heropatterns.com/
-*/
-.section-title-style-0 {
-  background-color: #32cccc;
-  background-image: url("data:image/svg+xml,%3Csvg width='38' height='38' viewBox='0 0 38 38' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='bevel-circle' fill='%23d7b6bf' fill-opacity='0.51'%3E%3Cpath d='M10.414 29l-8 8h33.172l-8-8H10.414zM9 27.586l-8 8V2.414l8 8v17.172zM10.414 9l-8-8h33.172l-8 8H10.414zM29 10.414l8-8v33.172l-8-8V10.414zM11 11h16v16H11V11zm8 14c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM0 0h38v38H0V0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-/*
-  Anchors Away - courtesy of https://www.heropatterns.com/
-*/
-.section-title-style-1 {
-  background-color: #32cccc;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23d7b6bf' fill-opacity='0.58' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
-}
-
-/*
-  Random Shapes - courtesy of https://www.heropatterns.com/
-*/
-.section-title-style-2 {
-  background-color: #32cccc;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23d7b6bf' fill-opacity='0.63'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-/*
-  Current - courtesy of https://www.heropatterns.com/
-*/
-.section-title-style-3 {
-  background-color: #32cccc;
-  background-image: url("data:image/svg+xml,%3Csvg width='76' height='18' viewBox='0 0 76 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32 18c-2.43-1.824-4-4.73-4-8 0-4.418-3.582-8-8-8H0V0h20c5.523 0 10 4.477 10 10 0 4.418 3.582 8 8 8h20c4.418 0 8-3.582 8-8 0-5.523 4.477-10 10-10v2c-4.418 0-8 3.582-8 8 0 3.27-1.57 6.176-4 8H32zM64 0c-1.67 1.256-3.748 2-6 2H38c-2.252 0-4.33-.744-6-2h32z' fill='%23d7b6bf' fill-opacity='0.72' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-
-/**
-* Footer
-*/
-
-footer {
-
-}
-
-.copyright {
-  font-size: 80%;
-  color: #808382;
+form #website{
+  display:none;
 }
