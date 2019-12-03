@@ -1,70 +1,70 @@
 document.getElementById("copyEmailButton").addEventListener("click", function() {
-    copyToClipboardMsg(document.getElementById("dmsEmailAddress"), "msg");
+  copyToClipboardMsg(document.getElementById("dmsEmailAddress"), "emailCopiedMessage");
 });
 
-function copyToClipboardMsg(elem, msgElem) {
-	  var succeed = copyToClipboard(elem)
-    var msg
+function copyToClipboardMsg(element, messageElement) {
+  var copySucceeded = copyToClipboard(element)
+  var userMessage
 
-    if (!succeed) {
-        msg = "Copy not supported or blocked. Sorry!"
-    } else {
-        msg = "You've just copied my email address. Speak to you soon!"
-    }
+  if (copySucceeded) {
+    userMessage = "You've just copied my email address. Speak to you soon!"
+  } else {
+    userMessage = "Copy not supported or blocked. Sorry!"
+  }
 
-    if (typeof msgElem === "string") {
-        msgElem = document.getElementById(msgElem);
-    }
+  if (typeof messageElement === "string") {
+    messageElement = document.getElementById(messageElement);
+  }
 
-    msgElem.innerHTML = msg
+  messageElement.innerHTML = userMessage
 
-    setTimeout(function() {
-        msgElem.innerHTML = ""
-    }, 5000)
+  setTimeout(function() {
+    messageElement.innerHTML = ""
+  }, 6000)
 }
 
 function copyToClipboard(elem) {
-	  // create hidden text element, if it doesn't already exist
-    var targetId = "_hiddenCopyText_"
-    var origSelectionStart, origSelectionEnd
+  // create hidden text element, if it doesn't already exist
+  var targetId = "_hiddenCopyText_"
+  var origSelectionStart, origSelectionEnd
 
-    target = elem
+  target = elem
 
-    origSelectionStart = elem.selectionStart
-    origSelectionEnd = elem.selectionEnd
-    // must use a temporary form element for the selection and copy
-    target = document.getElementById(targetId)
+  origSelectionStart = elem.selectionStart
+  origSelectionEnd = elem.selectionEnd
+  // must use a temporary form element for the selection and copy
+  target = document.getElementById(targetId)
 
-    if (!target) {
-        var target = document.createElement("textarea")
-        target.style.position = "absolute"
-        target.style.left = "-9999px"
-        target.style.top = "0"
-        target.id = targetId
-        document.body.appendChild(target)
-    }
+  if (!target) {
+    var target = document.createElement("textarea")
+    target.style.position = "absolute"
+    target.style.left = "-9999px"
+    target.style.top = "0"
+    target.id = targetId
+    document.body.appendChild(target)
+  }
 
-    target.textContent = elem.textContent;
+  target.textContent = elem.textContent;
 
-    // select the content
-    var currentFocus = document.activeElement;
-    target.focus()
-    target.setSelectionRange(0, target.value.length)
+  // select the content
+  var currentFocus = document.activeElement;
+  target.focus()
+  target.setSelectionRange(0, target.value.length)
 
-    // copy the selection
-    var succeed
+  // copy the selection
+  var succeed
 
-    try {
-    	  succeed = document.execCommand("copy");
-    } catch(e) {
-        succeed = false
-    }
-    // restore original focus
-    if (currentFocus && typeof currentFocus.focus === "function") {
-        currentFocus.focus();
-    }
+  try {
+	  succeed = document.execCommand("copy");
+  } catch(e) {
+    succeed = false
+  }
+  // restore original focus
+  if (currentFocus && typeof currentFocus.focus === "function") {
+    currentFocus.focus();
+  }
 
-    target.textContent = ""
+  target.textContent = ""
 
-    return succeed
+  return succeed
 }
