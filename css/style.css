@@ -6,8 +6,24 @@
   background-color: #f5f5f5!important;
 }
 
+.technologies-font {
+  color: #999!important;
+  font-size: 110%!important;
+  font-style: italic!important;
+}
+
 .bg-primary {
   background-color: #33cccc!important;
+}
+
+.project-modal-title {
+  font-size: 2rem!important;
+}
+
+@media (min-width: 992px) {
+  .project-modal-title {
+    font-size: 2.25rem!important;
+  }
 }
 
 .copy-email-button {
