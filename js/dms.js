@@ -1,3 +1,7 @@
+// copyright in footer
+var copyrightText = '\u00A9 Copyright 2018-' + new Date().getFullYear() + ', Dan Siegel';
+document.getElementById('copyright-text').appendChild(document.createTextNode(copyrightText))
+
 // add random pattern to section titles
 var sectionTitles = document.getElementsByClassName("section-title");
 
