@@ -35,8 +35,8 @@ function getProjectModal(project, modalKey) {
   var projectTechnologies = ''
   var projectLink = ''
 
-  if (project.imageUrl !== '') {
-    projectImage = '<img class="img-fluid rounded mb-2" src="img/projects/screenshots/' + project.imageUrl + '" alt="' + project.name + '">'
+  if (project.imageType !== '') {
+    projectImage = '<img class="img-fluid rounded mb-2" src="img/projects/screenshots/' + project.name.toLowerCase().replace(/\s/g, '') + '.' + project.imageType + '" alt="' + project.name + '">'
   }
 
   if (project.technologies !== []) {
@@ -96,7 +96,7 @@ function getProjects() {
     		"subtitle": "Side Project Collective",
     		"description": "A collective for developers who love passion projects and collaboration. 5to9 is an effort by myself and some fellows from university to create a group where people can work on side projects without necessarily planning on monetizing them. The group has done work in NodeJS, Swift, Java, Python/Jupyter Notebook and more.",
     		"technologies": [],
-    		"imageUrl": "",
+    		"imageType": "",
     		"link": "https://5to9.io"
     	},
       // {
@@ -120,7 +120,7 @@ function getProjects() {
     		"subtitle": "Randomly Generated Poetry",
         "description": "I was speaking with a professional photographer friend of mine about her difficulties when it comes to captioning her pictures. We joked about captioning everything with bad poetry, and Quality Poetry was born out of that conversation. Quality Poetry, found at qualitypoetry.com, is a webapp that procedurally generates poems.",
     		"technologies": ["TypeScript", "AngularJS", "NodeJS", "Twitter API", "Systemd"],
-    		"imageUrl": "qualityPoetry.png",
+    		"imageType": "png",
     		"link": "https://twitter.com/QualityPoetry"
     	},
       // {
@@ -136,7 +136,7 @@ function getProjects() {
     		"subtitle": "A Fashion Brand Website with a Twist",
         "description": "Okay pill is a clothing brand built around mental health awareness whose original website I volunteered to build as a favour to the founder. The messaging on the site is utilitarian, telling you that everything will be okay once you take your pill; but when you enter your email, it twists to have messaging about the side effects and anxieties of mood-altering medications.",
     		"technologies": ["NodeJS", "ReactJS"],
-    		"imageUrl": "okayPill.png",
+    		"imageType": "png",
     		"link": ""
     	},
       {
@@ -144,7 +144,7 @@ function getProjects() {
     		"subtitle": "Unity Project",
         "description": "A simple audio visualizer built for fun in Unity, with scripts written in C#. The program detects the beat of music and pulses lights accordingly. It was meant to be an early prototype of a more fleshed-out music visualizer.",
     		"technologies": ["Unity", "C#"],
-    		"imageUrl": "unityVisualizer.gif",
+    		"imageType": "gif",
     		"link": ""
     	},
       {
@@ -152,7 +152,7 @@ function getProjects() {
     		"subtitle": "Mood Tracking iOS App",
         "description": "At X Movement, the development team had a daily check-in where we summed up how we were feeling in one word. To keep things interesting, I threw together a little angularJS app to help my team find more descriptive words. Later, it was built into an iOS app.",
     		"technologies": ["Swift", "AngularJS", "PHP"],
-    		"imageUrl": "howAmI.png",
+    		"imageType": "png",
     		"link": ""
     	},
       // {
