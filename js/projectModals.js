@@ -136,7 +136,7 @@ function getProjects() {
       {
     		"name": "Quality Poetry",
     		"subtitle": "Randomly Generated Poetry",
-        "description": "I was speaking with a professional photographer friend of mine about her difficulties when it comes to captioning her pictures. We joked about captioning everything with bad poetry, and Quality Poetry was born out of that conversation. Quality Poetry, found at qualitypoetry.com, is a webapp that procedurally generates poems.",
+        "description": "A joke about captioning professional photography on Instagram with poetry that a teenager might write evolved into Quality Poetry. It's an API that serves procedurally-generated, badly written poems to a webapp and a Twitter account.",
     		"technologies": ["TypeScript", "AngularJS", "NodeJS", "Twitter API", "Systemd"],
     		"imageType": "png",
     		"link": "https://twitter.com/QualityPoetry"
