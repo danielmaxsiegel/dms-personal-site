@@ -16,6 +16,13 @@ modalsDiv.innerHTML = modals;
 
 
 function getProjectTile(project, modalKey) {
+  var name = project.name
+  var sanitizedName = name.toLowerCase().replace(/\s/g, '')
+
+  var projectIcon = '<img class="img-fluid" src="img/projects/icons/' +
+    sanitizedName +
+    '.png" alt="' + name + ' logo">'
+
   return '<div class="col-md-6 col-lg-4 text-center">' +
     '<div class="portfolio-item mx-auto small-bottom-margin" data-toggle="modal" data-target="#portfolioModal' + modalKey + '">' +
       '<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">' +
@@ -23,20 +30,31 @@ function getProjectTile(project, modalKey) {
           '<i class="fas fa-plus fa-3x"></i>' +
         '</div>' +
       '</div>' +
-      '<img class="img-fluid" src="img/projects/icons/' + project.name.toLowerCase().replace(/\s/g, '') + '.png" alt="' + project.name + ' logo">' +
+      projectIcon +
     '</div>' +
-    '<h5 class="no-bottom-margin project-title">' + project.name + '</h5>' +
+    '<h5 class="no-bottom-margin project-title">' + name + '</h5>' +
     '<p class="project-desc">' + project.subtitle + '</p>' +
   '</div>'
 }
 
 function getProjectModal(project, modalKey) {
+  var name = project.name
+  var sanitizedName = name.toLowerCase().replace(/\s/g, '')
+
   var projectImage = ''
   var projectTechnologies = ''
   var projectLink = ''
 
   if (project.imageType !== '') {
-    projectImage = '<img class="img-fluid rounded mb-2" src="img/projects/screenshots/' + project.name.toLowerCase().replace(/\s/g, '') + '.' + project.imageType + '" alt="' + project.name + '">'
+    if (project.imageType === 'video') {
+      projectImage = '<video autoplay loop muted playsinline class="img-fluid rounded mb-2">' +
+          '<source src="img/projects/screenshots/' + sanitizedName + '.webm" type="video/webm">' +
+          '<source src="img/projects/screenshots/' + sanitizedName + '.mp4" type="video/mp4">' +
+        '</video>'
+    } else {
+      projectImage = '<img class="img-fluid rounded mb-2" src="img/projects/screenshots/' +
+        sanitizedName + '.png" alt="' + name + '">'
+    }
   }
 
   if (project.technologies !== []) {
@@ -53,7 +71,7 @@ function getProjectModal(project, modalKey) {
   }
 
   if (project.link !== '') {
-    projectLink = '<a href="' + project.link + '" rel="noopener noreferrer" target="_blank">See ' + project.name + ' here</a>'
+    projectLink = '<a href="' + project.link + '" rel="noopener noreferrer" target="_blank">See ' + name + ' here</a>'
   }
 
   return '<div class="portfolio-modal modal fade" id="portfolioModal' + modalKey + '" tabindex="-1" role="dialog" aria-labelledby="portfolioModal' + modalKey + 'Label" aria-hidden="true">' +
@@ -68,7 +86,7 @@ function getProjectModal(project, modalKey) {
           '<div class="container">' +
             '<div class="row justify-content-center">' +
               '<div class="col-lg-8">' +
-                '<h3 class="portfolio-modal-title text-secondary text-uppercase mb-0 project-modal-title">' + project.name + '</h3>' +
+                '<h3 class="portfolio-modal-title text-secondary text-uppercase mb-0 project-modal-title">' + name + '</h3>' +
                 '<div class="divider-custom">' +
                   '<div class="divider-custom-line"></div>' +
                 '</div>' +
@@ -144,7 +162,7 @@ function getProjects() {
     		"subtitle": "Unity Project",
         "description": "A simple audio visualizer built for fun in Unity, with scripts written in C#. The program detects the beat of music and pulses lights accordingly. It was meant to be an early prototype of a more fleshed-out music visualizer.",
     		"technologies": ["Unity", "C#"],
-    		"imageType": "gif",
+    		"imageType": "video",
     		"link": ""
     	},
       {
