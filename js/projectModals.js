@@ -141,14 +141,6 @@ function getProjects() {
     		"imageType": "png",
     		"link": "https://twitter.com/QualityPoetry"
     	},
-      // {
-    	// 	"name": "LotOLife",
-    	// 	"subtitle": "Procedural People Generator",
-      //   "description": "A tool that procedurally generates a fake human being using real-world statistics. Starting with gender and country of origin, the tool attempts to generate personal information, abilities, and more. The name comes from the fact that there’s a “Lot O’ Life”, and that the random selection of traits in life is kind of like playing the Lotto.",
-    	// 	"technologies": ["PHP", "Bootstrap"],
-    	// 	"imageUrl": "lotOLife.png",
-      // "link": ""
-    	// },
       {
     		"name": "Okay Pill",
     		"subtitle": "A Fashion Brand Website with a Twist",
@@ -189,13 +181,21 @@ function getProjects() {
     		"imageType": "png",
         "link": ""
     	},
-      // {
-    	// 	"name": "Mashees",
-    	// 	"subtitle": "User-Generated Content Mash-Ups",
-      //   "description": "A fun tool that creates a mashup of gifs, audio and text. Content is driven by the users, so the amount of potential combinations is almost unlimited! Built in Node.js and React.",
-    	// 	"technologies": [],
-    	// 	"imageUrl": "mashees.jpg",
-      // "link": ""
-    	// }
+      {
+    		"name": "LotOLife",
+    		"subtitle": "Procedural People Generator",
+        "description": "A tool that procedurally generates a fake human being using real-world statistics. Starting with gender and country of origin, the tool attempts to generate personal information, abilities, and more. The name comes from the fact that there’s a “Lot O’ Life”, and that the random selection of traits in life is kind of like playing the Lotto.",
+    		"technologies": [],
+    		"imageType": "",
+        "link": ""
+    	},
+      {
+    		"name": "Mashees",
+    		"subtitle": "User-Generated Content Mash-Ups",
+        "description": "A fun tool that creates a mashup of gifs, audio and text. Content is driven by the users, so the amount of potential combinations is almost unlimited! Built in Node.js and React.",
+    		"technologies": ["NodeJS", "Postgres", "ReactJS"],
+    		"imageType": "",
+        "link": ""
+    	}
     ]
 }
