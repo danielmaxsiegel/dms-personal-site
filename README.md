@@ -5,8 +5,8 @@ The personal website of Daniel Max Siegel.
 ## Built with
 
 - Bootstrap 4
-- Start Bootstrap's freelancer theme
-- Heropattern
+- Start Bootstrap's Freelancer theme
+- [HeroPatterns](https://www.heropatterns.com/)
 
 ## Usage
 
