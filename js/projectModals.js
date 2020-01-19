@@ -48,8 +48,8 @@ function getProjectModal(project, modalKey) {
   if (project.imageType !== '') {
     if (project.imageType === 'video') {
       projectImage = '<video autoplay loop muted playsinline class="img-fluid rounded mb-2">' +
-          '<source src="img/projects/screenshots/' + sanitizedName + '.webm" type="video/webm">' +
-          '<source src="img/projects/screenshots/' + sanitizedName + '.mp4" type="video/mp4">' +
+          '<source type="video/mp4" src="img/projects/screenshots/' + sanitizedName + '.mp4">' +
+          '<source type="video/webm" src="img/projects/screenshots/' + sanitizedName + '.webm">' +
         '</video>'
     } else {
       projectImage = '<img class="img-fluid rounded mb-2" src="img/projects/screenshots/' +
@@ -176,7 +176,7 @@ function getProjects() {
       {
     		"name": "Crowdlet",
     		"subtitle": "Event-Enhancing Wearable Technology",
-        "description": "Part of my university capstone was creating a technology startup. What my group came up with was wearable technology that enhances interactivity in live entertainment spaces using social media, allowing users to control the colour of their wristbands by using twitter hashtags. Each hashtag corresponds to a specific colour, curated by the event's coordinator. The bracelet was created using a web-enabled microcontroller in a custom 3D printed chassis, and web tecnologies.",
+        "description": "Part of my university capstone was creating a technology startup. What my group came up with was wearable technology that enhances interactivity in live entertainment spaces using social media, allowing users to control the colour of their wristbands by using twitter hashtags. Each hashtag corresponds to a specific colour, curated by the event's coordinator. The bracelet was created using a web-enabled microcontroller in a custom 3D printed chassis, and web technologies.",
     		"technologies": ["Arduino", "NodeJS", "Objective-C", "Tinkercad"],
     		"imageType": "png",
         "link": ""
@@ -194,7 +194,7 @@ function getProjects() {
     		"subtitle": "User-Generated Content Mash-Ups",
         "description": "A fun tool that creates a mashup of gifs, audio and text. Content is driven by the users, so the amount of potential combinations is almost unlimited! Built in Node.js and React.",
     		"technologies": ["NodeJS", "Postgres", "ReactJS"],
-    		"imageType": "",
+    		"imageType": "png",
         "link": ""
     	}
     ]
