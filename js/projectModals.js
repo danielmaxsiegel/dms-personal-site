@@ -50,6 +50,7 @@ function getProjectModal(project, modalKey) {
       projectImage = '<video autoplay loop muted playsinline class="img-fluid rounded mb-2">' +
           '<source type="video/mp4" src="img/projects/screenshots/' + sanitizedName + '.mp4">' +
           '<source type="video/webm" src="img/projects/screenshots/' + sanitizedName + '.webm">' +
+          '<img src="img/projects/screenshots/' + sanitizedName + '.png" alt="' + name + ' screenshot" title="Your browser does not support the <video> tag">' +
         '</video>'
     } else {
       projectImage = '<img class="img-fluid rounded mb-2" src="img/projects/screenshots/' +
