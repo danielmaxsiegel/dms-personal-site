@@ -1,4 +1,5 @@
-document.getElementById("copyEmailButton").addEventListener("click", function() {
+document.getElementById("copyEmailButton").addEventListener("click", function(e) {
+  e.preventDefault();
   copyToClipboardMsg(document.getElementById("dmsEmailAddress"), "emailCopiedMessage");
 });
 
