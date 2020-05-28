@@ -1,3 +1,9 @@
+@media screen and (max-width: 768px) {
+  .content-desktop {
+    display: none;
+  }
+}
+
 .bg-grey {
   background-color: #eee!important;
 }
