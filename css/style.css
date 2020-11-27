@@ -22,6 +22,18 @@
   background-color: #33cccc!important;
 }
 
+.current-job {
+  font-size: 1.75rem;
+}
+
+.old-job {
+  font-size: 1.35rem;
+}
+
+.education {
+  font-size: 1.60rem;
+}
+
 .project-modal-title {
   font-size: 2rem!important;
 }
@@ -67,6 +79,10 @@
 
 .small-bottom-margin {
   margin-bottom: 5px!important;
+}
+
+.medium-bottom-margin {
+  margin-bottom: 10px!important;
 }
 
 form #url{
