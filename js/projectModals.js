@@ -42,6 +42,7 @@ function getProjectModal(project, modalKey) {
   var sanitizedName = name.toLowerCase().replace(/\s/g, '')
 
   var projectImage = ''
+  var projectImage2 = ''
   var projectTechnologies = ''
   var projectLink = ''
 
@@ -55,6 +56,19 @@ function getProjectModal(project, modalKey) {
     } else {
       projectImage = '<img class="img-fluid rounded mb-2" src="img/projects/screenshots/' +
         sanitizedName + '.png" alt="' + name + '">'
+    }
+  }
+
+  if (project.image2Type !== '') {
+    if (project.image2Type === 'video') {
+      projectImage2 = '<video autoplay loop muted playsinline class="content-desktop img-fluid rounded mb-2">' +
+          '<source type="video/mp4" src="img/projects/screenshots/' + sanitizedName + '2.mp4">' +
+          '<source type="video/webm" src="img/projects/screenshots/' + sanitizedName + '2.webm">' +
+          '<img src="img/projects/screenshots/' + sanitizedName + '.png" alt="' + name + ' screenshot" title="Your browser does not support the <video> tag">' +
+        '</video>'
+    } else {
+      projectImage2 = '<img class="img-fluid rounded mb-2" src="img/projects/screenshots/' +
+        sanitizedName + '2.png" alt="' + name + '">'
     }
   }
 
@@ -92,6 +106,7 @@ function getProjectModal(project, modalKey) {
                   '<div class="divider-custom-line"></div>' +
                 '</div>' +
                 projectImage +
+                projectImage2 +
                 projectTechnologies +
                 '<p class="mb-2">' + project.description + '</p>' +
                 '<div class="mb-5">' + projectLink + '</div>' +
@@ -113,33 +128,28 @@ function getProjects() {
       {
     		"name": "5to9",
     		"subtitle": "Side Project Collective",
-    		"description": "A collective for developers who love passion projects and collaboration. 5to9 is an effort by myself and some fellows from university to create a group where people can work on side projects without necessarily planning on monetizing them. The group has done work in NodeJS, Swift, Java, Python/Jupyter Notebook and more.",
+    		"description": "5to9 is a collective for developers who love passion projects and collaboration. It's an effort by some peers from university and myself to create a group where people can work on side projects collaboratively, without necessarily planning on monetizing them. The group has done work on machine learning projects, mood trackers, and things that are just for fun.",
     		"technologies": [],
     		"imageType": "",
-    		"link": "https://5to9.io"
+        "image2Type": "",
+    		"link": "http://5to9.io"
     	},
-      // {
-    	// 	"name": "Crowdium",
-    	// 	"subtitle": "Can you e-lance a whole business?",
-      //   "description": "While I was working at X Movement, I was feeling entrepreneurial but didn't have time to execute on anything (or an idea to execute on). ",
-    	// 	"technologies": [],
-    	// 	"imageUrl": "",
-      // "link": ""
-    	// },
-      // {
-    	// 	"name": "Shelfaudit",
-    	// 	"subtitle": "Author diversity analyzer",
-      //   "description": "",
-    	// 	"technologies": [],
-    	// 	"imageUrl": "",
-      // "link": ""
-    	// },
+      {
+    		"name": "Shelfaudit",
+    		"subtitle": "Author diversity analyzer",
+        "description": "As an avid reader, I find myself often using Goodreads to track the books I've read, and see how others feel about them. I realized that most people who fill out profiles on Goodreads don't read much beyond the limited selection presented to them in high school, and there's very little diversity in the selection - so I created ShelfAudit, a tool that helps you analyze the diversity of your bookshelf. The goal is just to point out the raw numbers - not commend or condemn anyone.",
+    		"technologies": ["PHP", "Laravel", "AngularJS"],
+    		"imageType": "video",
+    		"image2Type": "video",
+      "link": "http://shelfaudit.io"
+    	},
       {
     		"name": "Quality Poetry",
     		"subtitle": "Randomly Generated Poetry",
         "description": "A joke about captioning professional photography on Instagram with poetry that a teenager might write evolved into Quality Poetry. It's an API that serves procedurally-generated, badly written poems to a webapp and a Twitter account.",
     		"technologies": ["TypeScript", "AngularJS", "NodeJS", "Twitter API", "Systemd"],
     		"imageType": "png",
+        "image2Type": "",
     		"link": "https://twitter.com/QualityPoetry"
     	},
       {
@@ -148,7 +158,17 @@ function getProjects() {
         "description": "Okay pill is a clothing brand built around mental health awareness whose original website I volunteered to build as a favour to the founder. The messaging on the site is utilitarian, telling you that everything will be okay once you take your pill; but when you enter your email, it twists to have messaging about the side effects and anxieties of mood-altering medications.",
     		"technologies": ["NodeJS", "ReactJS"],
     		"imageType": "png",
+        "image2Type": "",
     		"link": ""
+    	},
+      {
+    		"name": "Crowdium",
+    		"subtitle": "Can you e-lance a whole business?",
+        "description": "While I was working at X Movement, I was feeling entrepreneurial - but didn't have the time to execute on anything. Or an idea to execute on, for that matter! So, I came up with a project to have e-Lancers on Fiverr create an entire business - I asked someone for a target market, someone else for a pain point of that target market, etcetera - and eventually had a surprisingly good idea and designs for a mental health support app that matches people who have similar problems into accountability groups! Maybe one day, I'll even build the thing.",
+    		"technologies": [],
+    		"imageType": "png",
+        "image2Type": "png",
+      "link": ""
     	},
       {
     		"name": "Music Visualizer",
@@ -156,6 +176,7 @@ function getProjects() {
         "description": "A simple audio visualizer built for fun in Unity, with scripts written in C#. The program detects the beat of music and pulses lights accordingly. It was meant to be an early prototype of a more fleshed-out music visualizer.",
     		"technologies": ["Unity", "C#"],
     		"imageType": "video",
+        "image2Type": "",
     		"link": ""
     	},
       {
@@ -164,6 +185,7 @@ function getProjects() {
         "description": "At X Movement, the development team had a daily check-in where we summed up how we were feeling in one word. To keep things interesting, I threw together a little angularJS app to help my team find more descriptive words. Later, it was built into an iOS app.",
     		"technologies": ["Swift", "AngularJS", "PHP"],
     		"imageType": "png",
+        "image2Type": "",
     		"link": ""
     	},
       {
@@ -172,6 +194,7 @@ function getProjects() {
         "description": "An immersive, 3D visualization of the universe. Built in Unity and intended for use with an Oculus Rift, Scal3d is a sample of of useful, immersive and fun education technology.",
     		"technologies": ["Unity", "C#", "Oculus Rift"],
     		"imageType": "video",
+        "image2Type": "",
         "link": ""
     	},
       {
@@ -180,14 +203,16 @@ function getProjects() {
         "description": "Part of my university capstone was creating a technology startup. What my group came up with was wearable technology that enhances interactivity in live entertainment spaces using social media, allowing users to control the colour of their wristbands by using twitter hashtags. Each hashtag corresponds to a specific colour, curated by the event's coordinator. The bracelet was created using a web-enabled microcontroller in a custom 3D printed chassis, and web technologies.",
     		"technologies": ["Arduino", "NodeJS", "Objective-C", "Tinkercad"],
     		"imageType": "png",
+        "image2Type": "",
         "link": ""
     	},
       {
     		"name": "LotOLife",
     		"subtitle": "Procedural People Generator",
         "description": "A tool that procedurally generates a fake human being using real-world statistics. Starting with gender and country of origin, the tool attempts to generate personal information, abilities, and more. The name comes from the fact that there’s a “Lot O’ Life”, and that the random selection of traits in life is kind of like playing the Lotto.",
-    		"technologies": [],
+    		"technologies": ["PHP", "Lithium", "Bootstrap"],
     		"imageType": "",
+        "image2Type": "",
         "link": ""
     	},
       {
@@ -196,6 +221,7 @@ function getProjects() {
         "description": "A fun tool that creates a mashup of gifs, audio and text. Content is driven by the users, so the amount of potential combinations is almost unlimited! Built in Node.js and React.",
     		"technologies": ["NodeJS", "Postgres", "ReactJS"],
     		"imageType": "png",
+        "image2Type": "",
         "link": ""
     	}
     ]
