@@ -33,7 +33,7 @@
         "magnific-popup": "^1.1.0"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.13",
+        "browser-sync": "^2.23.7",
         "del": "5.1.0",
         "gulp": "4.0.2",
         "gulp-autoprefixer": "7.0.0",
