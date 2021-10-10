@@ -126,6 +126,15 @@ function getProjectModal(project, modalKey) {
 function getProjects() {
   return [
       {
+        "name": "Made in Canada",
+        "subtitle": "Patriotic Browser Extension",
+        "description": "Made In Canada is a chromium browser extension that provides a small banner whenever you visit a (listed) website that provides goods or services that are produced in Canada.",
+        "technologies": [],
+        "imageType": "png",
+        "image2Type": "",
+        "link": "https://chrome.google.com/webstore/detail/made-in-canada/nfmnjgklnagmnjikambimgcokimcfjkp"
+      },
+      {
     		"name": "5to9",
     		"subtitle": "Side Project Collective",
     		"description": "5to9 is a collective for developers who love passion projects and collaboration. It's an effort by some peers from university and myself to create a group where people can work on side projects collaboratively, without necessarily planning on monetizing them. The group has done work on machine learning projects, mood trackers, and things that are just for fun.",
