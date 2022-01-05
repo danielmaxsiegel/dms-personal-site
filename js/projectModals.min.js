@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Dan Siegel v1.0.0 (https://danielmaxsiegel.com)
- * Copyright 2013-2021 Start Bootstrap
+ * Copyright 2013-2022 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer-dms/blob/master/LICENSE)
  */
 
