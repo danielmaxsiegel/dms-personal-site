@@ -23,7 +23,7 @@ function getProjectTile(project, modalKey) {
     sanitizedName +
     '.png" alt="' + name + ' logo">'
 
-  return '<div class="col-md-6 col-lg-4 text-center">' +
+  return '<div class="col-sm-12 col-md-4 col-lg-3 text-center">' +
     '<div class="portfolio-item mx-auto small-bottom-margin" data-toggle="modal" data-target="#portfolioModal' + modalKey + '">' +
       '<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">' +
         '<div class="portfolio-item-caption-content text-center text-white">' +
@@ -126,6 +126,42 @@ function getProjectModal(project, modalKey) {
 function getProjects() {
   return [
       {
+        "name": "Twitter BubbleMaker",
+        "subtitle": "Make Your Own Bubble",
+        "description": "Browsing Twitter can be difficult because people might criticize the things you like. So, we developed a solution that lets you put yourself in a bubble and only look at positive tweets. Our program loads tweets from Twitter, uses a machine learning model to classify whether the sentiment of each tweet is positive or negative, filters out the negative tweets, changes their sentiment to positive, and then presents only positive tweets.",
+        "technologies": ["Python"],
+        "imageType": "png",
+        "image2Type": "",
+        "link": "https://github.com/AI-at-GBC/tweet-analysis"
+      },
+      {
+        "name": "Speaker Recognition",
+        "subtitle": "ML for Voice Classification",
+        "description": "In order to learn data pre-processing and data classification, we created speaker recognition algorithms. The linked repository contains code to transform voice clips into a data set that can be used to train models, and multiple predictive models which can read in that data. One classification method uses a Residual Neural Network, while the other runs image recognition on spectrograms of the audio clips.",
+        "technologies": ["Python"],
+        "imageType": "png",
+        "image2Type": "",
+        "link": "https://github.com/AI-at-GBC/voice-classifier"
+      },
+      {
+        "name": "Python for Pythons",
+        "subtitle": "AI-Powered Snake Detector",
+        "description": "As a prototype for the AI logic behind a mobile application that can be used to detect different types of snakes, we trained different Convolutional Neural Network (CNN) models from the Tensorflow 2 Detection Model Zoo in an effort to benchmark different methods, build a model that works for our purposes, and of course, to learn. We annotated images and trained three different types of CNN - Single Shot MultiBox Detector (SSD), Faster Region Based Convolutional Network (Faster R-CNN), and You Only Look Once v5 (YOLOv5).",
+        "technologies": ["Python", "TensorFlow", "PyTorch"],
+        "imageType": "png",
+        "image2Type": "",
+        "link": "https://github.com/AI-at-GBC/Python_for_Pythons-Snake_Detection"
+      },
+      {
+        "name": "KSI Analysis",
+        "subtitle": "Predicting Injuries With ML",
+        "description": "Built random forest predictive models in order to learn how to determine for the best hyperparameters for a classical machine learning task. For this project, we created a series of random forest models which review structured traffic accident data from Toronto and predict the severity of injury likely obtained by the involved parties.",
+        "technologies": ["Python"],
+        "imageType": "png",
+        "image2Type": "",
+        "link": "https://github.com/AI-at-GBC/ksi_analysis"
+      },
+      {
         "name": "Made in Canada",
         "subtitle": "Patriotic Browser Extension",
         "description": "Made In Canada is a chromium browser extension that provides a small banner whenever you visit a (listed) website that provides goods or services that are produced in Canada.",
@@ -145,7 +181,7 @@ function getProjects() {
     	},
       {
     		"name": "Shelfaudit",
-    		"subtitle": "Author diversity analyzer",
+    		"subtitle": "Author Diversity Analyzer",
         "description": "As an avid reader, I find myself often using Goodreads to track the books I've read, and see how others feel about them. I realized that most people who fill out profiles on Goodreads don't read much beyond the limited selection presented to them in high school, and there's very little diversity in the selection - so I created ShelfAudit, a tool that helps you analyze the diversity of your bookshelf. The goal is just to point out the raw numbers - not commend or condemn anyone.",
     		"technologies": ["PHP", "Laravel", "AngularJS"],
     		"imageType": "video",
@@ -163,7 +199,7 @@ function getProjects() {
     	},
       {
     		"name": "Okay Pill",
-    		"subtitle": "A Fashion Brand Website with a Twist",
+    		"subtitle": "Fashion Brand Website with a Twist",
         "description": "Okay pill is a clothing brand built around mental health awareness whose original website I volunteered to build as a favour to the founder. The messaging on the site is utilitarian, telling you that everything will be okay once you take your pill; but when you enter your email, it twists to have messaging about the side effects and anxieties of mood-altering medications.",
     		"technologies": ["NodeJS", "ReactJS"],
     		"imageType": "png",
