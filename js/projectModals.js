@@ -128,9 +128,9 @@ function getProjects() {
       {
         "name": "Twitter BubbleMaker",
         "subtitle": "Make Your Own Bubble",
-        "description": "Browsing Twitter can be difficult because people might criticize the things you like. So, we developed a solution that lets you put yourself in a bubble and only look at positive tweets. Our program loads tweets from Twitter, uses a machine learning model to classify whether the sentiment of each tweet is positive or negative, filters out the negative tweets, changes their sentiment to positive, and then presents only positive tweets.",
-        "technologies": ["Python"],
-        "imageType": "png",
+        "description": "Browsing Twitter can be difficult because you may see people criticizing the things you like. So, we developed a solution that lets you put yourself in a bubble, and only look at positive tweets! Our program loads tweets from Twitter on a topic of a users choice, then filters out the tweets with negative sentiment using a machine learning algorithm. The negative tweets then have their negative words changed to be positive, and the user is returned only tweets that are positive either naturally or thanks to the algorithm.",
+        "technologies": ["Python", "TensorFlow", "TweePy", "NLTK"],
+        "imageType": "",
         "image2Type": "",
         "link": "https://github.com/AI-at-GBC/tweet-analysis"
       },
@@ -138,8 +138,8 @@ function getProjects() {
         "name": "Speaker Recognition",
         "subtitle": "ML for Voice Classification",
         "description": "In order to learn data pre-processing and data classification, we created speaker recognition algorithms. The linked repository contains code to transform voice clips into a data set that can be used to train models, and multiple predictive models which can read in that data. One classification method uses a Residual Neural Network, while the other runs image recognition on spectrograms of the audio clips.",
-        "technologies": ["Python"],
-        "imageType": "png",
+        "technologies": ["Python", "PyDub", "Librosa", "FFMPEG", "FastAI", "TensorFlow"],
+        "imageType": "",
         "image2Type": "",
         "link": "https://github.com/AI-at-GBC/voice-classifier"
       },
@@ -147,7 +147,7 @@ function getProjects() {
         "name": "Python for Pythons",
         "subtitle": "AI-Powered Snake Detector",
         "description": "As a prototype for the AI logic behind a mobile application that can be used to detect different types of snakes, we trained different Convolutional Neural Network (CNN) models from the Tensorflow 2 Detection Model Zoo in an effort to benchmark different methods, build a model that works for our purposes, and of course, to learn. We annotated images and trained three different types of CNN - Single Shot MultiBox Detector (SSD), Faster Region Based Convolutional Network (Faster R-CNN), and You Only Look Once v5 (YOLOv5).",
-        "technologies": ["Python", "TensorFlow", "PyTorch"],
+        "technologies": ["Python", "TensorFlow", "ModelZoo", "PyTorch"],
         "imageType": "png",
         "image2Type": "",
         "link": "https://github.com/AI-at-GBC/Python_for_Pythons-Snake_Detection"
@@ -155,16 +155,16 @@ function getProjects() {
       {
         "name": "KSI Analysis",
         "subtitle": "Predicting Injuries With ML",
-        "description": "Built random forest predictive models in order to learn how to determine for the best hyperparameters for a classical machine learning task. For this project, we created a series of random forest models which review structured traffic accident data from Toronto and predict the severity of injury likely obtained by the involved parties.",
-        "technologies": ["Python"],
-        "imageType": "png",
+        "description": "A project to learn how to determine the best hyperparameters for a classical machine learning task. For this project, we created a series of random forest models which review structured traffic accident data from Toronto and predict the severity of injury likely obtained by the involved parties.",
+        "technologies": ["Python", "Pandas", "Numpy", "SciKit-Learn"],
+        "imageType": "",
         "image2Type": "",
         "link": "https://github.com/AI-at-GBC/ksi_analysis"
       },
       {
         "name": "Made in Canada",
         "subtitle": "Patriotic Browser Extension",
-        "description": "Made In Canada is a chromium browser extension that provides a small banner whenever you visit a (listed) website that provides goods or services that are produced in Canada.",
+        "description": "Made In Canada is a Chromium browser extension that provides a small banner whenever you visit a (listed) website that provides goods or services that are produced in Canada.",
         "technologies": [],
         "imageType": "png",
         "image2Type": "",
