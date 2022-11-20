@@ -4,6 +4,10 @@
   }
 }
 
+body h1 {
+  color:#fff;
+}
+
 .bg-grey {
   background-color: #eee!important;
 }
@@ -16,10 +20,6 @@
   color: #999!important;
   font-size: 110%!important;
   font-style: italic!important;
-}
-
-.bg-primary {
-  background-color: #33cccc!important;
 }
 
 .current-job {
@@ -91,6 +91,11 @@ form #url{
 
 form #website{
   display:none;
+}
+
+.custom-footer{
+  padding-top:2rem;
+  padding-bottom:2rem;
 }
 
 /**

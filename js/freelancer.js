@@ -15,16 +15,6 @@
     }
   });
 
-  // Scroll to top button appear
-  $(document).scroll(function() {
-    var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > 100) {
-      $('.scroll-to-top').fadeIn();
-    } else {
-      $('.scroll-to-top').fadeOut();
-    }
-  });
-
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -35,27 +25,6 @@
     target: '#mainNav',
     offset: 80
   });
-
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-      $("#navbar-title").text("DMS");
-      // $('#navbar-title').animate({'opacity': 0}, 1000, function () {
-      //     $(this).text('DMS');
-      // }).animate({'opacity': 1}, 1000);
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-      $("#navbar-title").text("Daniel Max Siegel");
-      // $('#navbar-title').animate({'opacity': 0}, 1000, function () {
-      //     $(this).text('Daniel Max Siegel');
-      // }).animate({'opacity': 1}, 1000);
-    }
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
 
   // Floating label headings for the contact form
   $(function() {
