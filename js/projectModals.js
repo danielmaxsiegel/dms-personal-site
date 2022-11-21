@@ -1,39 +1,27 @@
 projects = getProjects()
 
-var projectTiles = ''
+var projectRows = ''
 var modals = ''
 
 for (var i = 0; i < projects.length; i++) {
-  projectTiles += getProjectTile(projects[i], i + 1)
+  projectRows += getProjectRow(projects[i], i + 1)
   modals += getProjectModal(projects[i], i + 1)
 }
 
 var projectTileDiv = document.getElementById("projectGrid");
 var modalsDiv = document.getElementById("modalsDiv");
 
-projectTileDiv.innerHTML = projectTiles;
+projectTileDiv.innerHTML = projectRows;
 modalsDiv.innerHTML = modals;
 
-
-function getProjectTile(project, modalKey) {
+function getProjectRow(project, modalKey) {
   var name = project.name
-  var sanitizedName = name.toLowerCase().replace(/\s/g, '')
+  var subtitle = project.subtitle
 
-  var projectIcon = '<img class="img-fluid" src="img/projects/icons/' +
-    sanitizedName +
-    '.png" alt="' + name + ' logo">'
-
-  return '<div class="col-sm-12 col-md-4 col-lg-3 text-center">' +
-    '<div class="portfolio-item mx-auto small-bottom-margin" data-toggle="modal" data-target="#portfolioModal' + modalKey + '">' +
-      '<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">' +
-        '<div class="portfolio-item-caption-content text-center text-white">' +
-          '<i class="fas fa-plus fa-3x"></i>' +
-        '</div>' +
-      '</div>' +
-      projectIcon +
-    '</div>' +
-    '<h5 class="no-bottom-margin project-title">' + name + '</h5>' +
-    '<p class="project-desc">' + project.subtitle + '</p>' +
+  return '' +
+  '<div class="project-row" data-toggle="modal" data-target="#portfolioModal' + modalKey + '">' +
+    '<h4><span class="project-name">' + name + '</span></h4>' +
+    '<span class="project-subtitle">' + subtitle + '</span>' +
   '</div>'
 }
 
