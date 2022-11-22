@@ -19,10 +19,11 @@ function getProjectRow(project, modalKey) {
   var subtitle = project.subtitle
 
   return '' +
-  '<div class="project-row" data-toggle="modal" data-target="#portfolioModal' + modalKey + '">' +
-    '<h4><span class="project-name">' + name + '</span></h4>' +
+  '<div class="project-row" id="project-row-' + modalKey + '" data-toggle="modal" data-target="#portfolioModal' + modalKey + '">' +
+    '<h2 class="m-0" id="project-title-' + modalKey + '"><span class="project-name">' + name + '</span></h2>' +
     '<span class="project-subtitle">' + subtitle + '</span>' +
-  '</div>'
+  '</div>' +
+  '<div class="project-line-break"></div>'
 }
 
 function getProjectModal(project, modalKey) {
@@ -74,7 +75,7 @@ function getProjectModal(project, modalKey) {
   }
 
   if (project.link !== '') {
-    projectLink = '<a href="' + project.link + '" rel="noopener noreferrer" target="_blank">See ' + name + ' here</a>'
+    projectLink = '<a class="project-link" href="' + project.link + '" rel="noopener noreferrer" target="_blank">See ' + name + ' here</a>'
   }
 
   return '<div class="portfolio-modal modal fade" id="portfolioModal' + modalKey + '" tabindex="-1" role="dialog" aria-labelledby="portfolioModal' + modalKey + 'Label" aria-hidden="true">' +
@@ -82,14 +83,14 @@ function getProjectModal(project, modalKey) {
       '<div class="modal-content">' +
         '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
           '<span aria-hidden="true">' +
-            '<i class="fas fa-times"></i>' +
+            '<i class="fas fa-times icon-black"></i>' +
           '</span>' +
         '</button>' +
         '<div class="modal-body text-center">' +
           '<div class="container">' +
             '<div class="row justify-content-center">' +
               '<div class="col-lg-8">' +
-                '<h3 class="portfolio-modal-title text-secondary text-uppercase mb-0 project-modal-title">' + name + '</h3>' +
+                '<h3 class="portfolio-modal-title text-secondary mb-0 project-modal-title">' + name + '</h3>' +
                 '<div class="divider-custom">' +
                   '<div class="divider-custom-line"></div>' +
                 '</div>' +
@@ -98,7 +99,7 @@ function getProjectModal(project, modalKey) {
                 projectTechnologies +
                 '<p class="mb-2">' + project.description + '</p>' +
                 '<div class="mb-5">' + projectLink + '</div>' +
-                '<button class="btn btn-primary" href="#" data-dismiss="modal">' +
+                '<button class="btn project-close-modal-button" href="#" data-dismiss="modal">' +
                   '<i class="fas fa-times fa-fw"></i>' +
                   'Close Window' +
                 '</button>' +

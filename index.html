@@ -33,20 +33,40 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <!-- <nav class="navbar fixed-top navbar-shrink navbar-style" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top" id="navbar-title">Daniel Max Siegel</a>
+  <nav class="navbar fixed-top navbar-shrink navbar-style" id="mainNav">
+    <div class="container navbar-container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" id="navbar-title">DMS</a>
+
+      <div class="social-buttons">
+        <a class="btn btn-outline-light btn-social" href="https://github.com/danielmaxsiegel" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-fw fa-github"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social" href="https://www.goodreads.com/danielmaxsiegel" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-fw fa-goodreads-g"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social" href="https://letterboxd.com/danmax/" rel="noopener noreferrer" target="_blank">
+          <i class="fas fa-film"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/danielmaxsiegel/" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-fw fa-linkedin-in"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social" href="mailto:hi@danmax.cc" rel="noopener noreferrer" target="_blank">
+          <i class="fab fa-fw fas fa-envelope"></i>
+        </a>
+      </div>
     </div>
-  </nav> -->
+  </nav>
 
   <!-- Main Section -->
   <section class="page-section portfolio" id="main-section">
     <div class="container no-padding">
-      <h1>Hi, I'm Dan</h1>
-      <span class='intro-text'>I'm a data engineer who loves science fiction, making pottery, and all things music.</span>
+      <h1>Hi, I'm Dan.</h1>
+      <span class='intro-text'>I'm a machine learning engineer who loves neuroscience, science fiction, making pottery, and all things music.</span>
+
+      <div class="section-break"></div>
 
       <h1>Work Experience</h1>
-      <h2>Data Engineer @ <a href="https://www.vts.com/" rel="noopener noreferrer" target="_blank">VTS</a> (2022-)</h2>
+      <h2>Presently: Data Engineer @ <a href="https://www.vts.com/" rel="noopener noreferrer" target="_blank">VTS</a> (2022-)</h2>
       <h3>Full-Stack Developer @ <a href="https://www.compassdigital.io/" rel="noopener noreferrer" target="_blank">Compass Digital Labs</a> (2021)</h3>
       <h3>SDE II @ <a href="https://zulily.com" rel="noopener noreferrer" target="_blank">Zulily</a> (2018-2020)</h3>
       <h3>SDE I @ <a href="https://www.xmovement.com" rel="noopener noreferrer" target="_blank">X Movement</a> (2015-2018, part-time)</h3>
@@ -54,42 +74,43 @@
       <h3>Intern @ <a href="https://twitter.com/thumbleapp" rel="noopener noreferrer" target="_blank">Thumble</a> (2013-2014)</h3>
       <h3>Intern @ <a href="https://dmz.ryerson.ca/" rel="noopener noreferrer" target="_blank">the DMZ at Ryerson University</a> (2013)</h3>
 
-      <div style="margin:15px"></div>
+      <div class="section-break"></div>
 
       <h1>Education</h1>
       <h3>Postgraduate Cert., Applied Artificial Intelligence @ <a href="https://www.georgebrown.ca/" rel="noopener noreferrer" target="_blank">GBC</a> (2021-2022)</h3>
-      <h3>Various courses @ <a href="https://seattlecentral.edu/" rel="noopener noreferrer" target="_blank">Seattle Central College</a> (2019-2020)</h3>
+      <h3>Courses @ <a href="https://seattlecentral.edu/" rel="noopener noreferrer" target="_blank">Seattle Central College</a> (2019-2020)</h3>
       <h3>B.Sc, Computer Science @ <a href="https://www.ryerson.ca/" rel="noopener noreferrer" target="_blank">Ryerson University</a> (2011-2017)</h3>
 
+      <div class="section-break"></div>
+
       <h1>Projects</h1>
-      <div class="row" id="projectGrid">
-      </div>
+      <div id="projectGrid"></div>
+
+      <div class="section-break"></div>
 
       <h1>Say Hello</h1>
-
-      <h3 id="dmsEmailAddress">hi@danmax.cc <i class="fas fa-envelope"></i></h3>
-
+      <h2 id="emailCopiedMessage"></h2>
+      <h2 id="dmsEmailAddress">hi@danmax.cc</h2>
       <h4><a href="mailto:hi@danmax.cc">Send an email</a></h4>
-
       <h4 class="content-desktop">
-        <button class="copy-email-button" id="copyEmailButton">Copy to clipboard</button>
+        <button class="copy-email-button" id="copyEmailButton">Copy address to clipboard</button>
       </h4>
-      <br>
-      <span id="emailCopiedMessage"></span>
+
+      <div class="section-break"></div>
 
       <h1>Around the Web</h1>
 
-      <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/danielmaxsiegel" rel="noopener noreferrer" target="_blank">
-        <i class="fab fa-fw fa-github"></i>
+      <a href="https://github.com/danielmaxsiegel" rel="noopener noreferrer" target="_blank">
+        <h2>Github</h2>
       </a>
-      <a class="btn btn-outline-light btn-social mx-1" href="https://www.goodreads.com/danielmaxsiegel" rel="noopener noreferrer" target="_blank">
-        <i class="fab fa-fw fa-goodreads-g"></i>
+      <a href="https://www.goodreads.com/danielmaxsiegel" rel="noopener noreferrer" target="_blank">
+        <h2>Goodreads</h2>
       </a>
-      <a class="btn btn-outline-light btn-social mx-1" href="https://letterboxd.com/danmax/" rel="noopener noreferrer" target="_blank">
-        <i class="fas fa-film"></i>
+      <a href="https://letterboxd.com/danmax/" rel="noopener noreferrer" target="_blank">
+        <h2>LetterBoxd</h2>
       </a>
-      <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/danielmaxsiegel/" rel="noopener noreferrer" target="_blank">
-        <i class="fab fa-fw fa-linkedin-in"></i>
+      <a href="https://www.linkedin.com/in/danielmaxsiegel/" rel="noopener noreferrer" target="_blank">
+        <h2>LinkedIn</h2>
       </a>
     </div>
   </section>

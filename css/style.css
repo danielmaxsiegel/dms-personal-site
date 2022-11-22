@@ -1,24 +1,41 @@
+a, a:active, a:visited {
+  color: gainsboro;
+}
+
+a:hover, a:focus {
+  color: gainsboro;
+  text-decoration: underline;
+}
+
+body {
+  background-color: #000;
+}
+
 h1 { 
   color: white;
   font-family: 'Lato', sans-serif;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 h2 {
-  color: white;
+  color: WhiteSmoke;
   font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 h3 {
-  color: white;
+  color: gainsboro;
   font-family: 'Lato', sans-serif;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 h4 {
-  color: white;
+  color: lightgray;
   font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
@@ -28,13 +45,26 @@ h4 {
   }
 }
 
+.navbar-style {
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid #2f3336;
+}
+
+.navbar-container {
+  padding:0;
+}
+
 .intro-text {
   color: #fff;
 }
 
-.navbar-style {
-  background-color: #000;
-  border-bottom: 1px solid #2f3336;
+.project-line-break {
+  margin-bottom: 10px;
+}
+
+.section-break {
+  margin-bottom: 15px;
 }
 
 .no-padding {
@@ -47,28 +77,51 @@ h4 {
   font-style: italic!important;
 }
 
-.current-job {
-  font-size: 1.75rem;
-}
-
-.education {
-  font-size: 1.60rem;
-}
-
 .project-row {
-  display: block; 
+  cursor: pointer;
+  width: 100%;
 }
 
-.project-name {
-  /* font-sizexw:4rem; */
+.project-row:hover {
+  background-color: rgba(15, 15, 15, 0.3);
 }
+
+.project-row:hover .project-name {
+  text-decoration: underline;
+}
+/* 
+.project-name:hover {
+  text-decoration: underline;
+} */
 
 .project-subtitle {
-  /* font-size:4rem; */
+  color: lightgray;
+}
+
+.project-close-modal-button,
+.project-close-modal-button:active,
+.project-close-modal-button:visited {
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.project-close-modal-button:hover {
+  background-color: #303030;
+  border: none;
+  color: white;
 }
 
 .project-modal-title {
   font-size: 2rem!important;
+}
+
+.icon-black {
+  color: black;
+}
+
+.project-link {
+  color: #111!important;
 }
 
 @media (min-width: 992px) {
@@ -83,15 +136,15 @@ h4 {
   padding: 0!important;
   cursor: pointer;
 
-  color: #1abc9c;
+  color: gainsboro;
   text-decoration: none;
   background-color: transparent;
 
-  font-weight: 700!important;
+  font-weight: 400!important;
 }
 
 .copy-email-button:hover {
-  color: #117964;
+  color: gainsboro;
   text-decoration: underline;
 }
 
@@ -126,7 +179,6 @@ form #website{
   background-color: #000;
   border-top: 1px solid #2f3336;
   color: #fff;
-  border-top: 1px solid #2f3336;
 }
 
 /**
