@@ -186,33 +186,33 @@ function getProjects() {
         "image2Type": "",
     		"link": "https://twitter.com/QualityPoetry"
     	},
-      {
-    		"name": "Okay Pill",
-    		"subtitle": "Fashion Brand Website with a Twist",
-        "description": "Okay pill is a clothing brand built around mental health awareness whose original website I volunteered to build as a favour to the founder. The messaging on the site is utilitarian, telling you that everything will be okay once you take your pill; but when you enter your email, it twists to have messaging about the side effects and anxieties of mood-altering medications.",
-    		"technologies": ["NodeJS", "ReactJS"],
-    		"imageType": "png",
-        "image2Type": "",
-    		"link": ""
-    	},
-      {
-    		"name": "Crowdium",
-    		"subtitle": "Can you e-lance a whole business?",
-        "description": "While I was working at X Movement, I was feeling entrepreneurial - but didn't have the time to execute on anything. Or an idea to execute on, for that matter! So, I came up with a project to have e-Lancers on Fiverr create an entire business - I asked someone for a target market, someone else for a pain point of that target market, etcetera - and eventually had a surprisingly good idea and designs for a mental health support app that matches people who have similar problems into accountability groups! Maybe one day, I'll even build the thing.",
-    		"technologies": [],
-    		"imageType": "png",
-        "image2Type": "png",
-      "link": ""
-    	},
-      {
-    		"name": "Music Visualizer",
-    		"subtitle": "Unity Project",
-        "description": "A simple audio visualizer built for fun in Unity, with scripts written in C#. The program detects the beat of music and pulses lights accordingly. It was meant to be an early prototype of a more fleshed-out music visualizer.",
-    		"technologies": ["Unity", "C#"],
-    		"imageType": "video",
-        "image2Type": "",
-    		"link": ""
-    	},
+      // {
+    	// 	"name": "Okay Pill",
+    	// 	"subtitle": "Fashion Brand Website with a Twist",
+      //   "description": "Okay pill is a clothing brand built around mental health awareness whose original website I volunteered to build as a favour to the founder. The messaging on the site is utilitarian, telling you that everything will be okay once you take your pill; but when you enter your email, it twists to have messaging about the side effects and anxieties of mood-altering medications.",
+    	// 	"technologies": ["NodeJS", "ReactJS"],
+    	// 	"imageType": "png",
+      //   "image2Type": "",
+    	// 	"link": ""
+    	// },
+      // {
+    	// 	"name": "Crowdium",
+    	// 	"subtitle": "Can you e-lance a whole business?",
+      //   "description": "While I was working at X Movement, I was feeling entrepreneurial - but didn't have the time to execute on anything. Or an idea to execute on, for that matter! So, I came up with a project to have e-Lancers on Fiverr create an entire business - I asked someone for a target market, someone else for a pain point of that target market, etcetera - and eventually had a surprisingly good idea and designs for a mental health support app that matches people who have similar problems into accountability groups! Maybe one day, I'll even build the thing.",
+    	// 	"technologies": [],
+    	// 	"imageType": "png",
+      //   "image2Type": "png",
+      // "link": ""
+    	// },
+      // {
+    	// 	"name": "Music Visualizer",
+    	// 	"subtitle": "Unity Project",
+      //   "description": "A simple audio visualizer built for fun in Unity, with scripts written in C#. The program detects the beat of music and pulses lights accordingly. It was meant to be an early prototype of a more fleshed-out music visualizer.",
+    	// 	"technologies": ["Unity", "C#"],
+    	// 	"imageType": "video",
+      //   "image2Type": "",
+    	// 	"link": ""
+    	// },
       {
     		"name": "HowAmI",
     		"subtitle": "Mood Tracking iOS App",
@@ -240,15 +240,15 @@ function getProjects() {
         "image2Type": "",
         "link": ""
     	},
-      {
-    		"name": "LotOLife",
-    		"subtitle": "Procedural People Generator",
-        "description": "A tool that procedurally generates a fake human being using real-world statistics. Starting with gender and country of origin, the tool attempts to generate personal information, abilities, and more. The name comes from the fact that there’s a “Lot O’ Life”, and that the random selection of traits in life is kind of like playing the Lotto.",
-    		"technologies": ["PHP", "Lithium", "Bootstrap"],
-    		"imageType": "",
-        "image2Type": "",
-        "link": ""
-    	},
+      // {
+    	// 	"name": "LotOLife",
+    	// 	"subtitle": "Procedural People Generator",
+      //   "description": "A tool that procedurally generates a fake human being using real-world statistics. Starting with gender and country of origin, the tool attempts to generate personal information, abilities, and more. The name comes from the fact that there’s a “Lot O’ Life”, and that the random selection of traits in life is kind of like playing the Lotto.",
+    	// 	"technologies": ["PHP", "Lithium", "Bootstrap"],
+    	// 	"imageType": "",
+      //   "image2Type": "",
+      //   "link": ""
+    	// },
       {
     		"name": "Mashees",
     		"subtitle": "User-Generated Content Mash-Ups",
