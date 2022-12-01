@@ -1,7 +1,7 @@
 {
     "title": "Dan Siegel",
     "name": "startbootstrap-freelancer-dms",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
@@ -23,12 +23,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+        "url": "https://github.com/danielmaxsiegel/dms-personal-site"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.12.0",
-        "bootstrap": "4.3.1",
-        "jquery": "3.5.0",
+        "@fortawesome/fontawesome-free": "^6.2.1",
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.5.0",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
         "sass": "^1.41.1"
@@ -44,6 +44,7 @@
         "gulp-rename": "1.4.0",
         "gulp-sass": "^5.0.0",
         "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
+        "merge-stream": "2.0.0",
+        "watchpack": "^2.0.0"
     }
 }
