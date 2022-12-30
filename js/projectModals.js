@@ -184,7 +184,7 @@ function getProjects() {
     		"technologies": ["TypeScript", "AngularJS", "NodeJS", "Twitter API", "Systemd"],
     		"imageType": "png",
         "image2Type": "",
-    		"link": "https://twitter.com/QualityPoetry"
+    		"link": "https://botsin.space/@qualitypoetry"
     	},
       // {
     	// 	"name": "Okay Pill",
